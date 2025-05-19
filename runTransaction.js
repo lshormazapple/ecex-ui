@@ -53,12 +53,7 @@ const MAX_RETRIES = 3;
         'Version/14.0 Mobile/15E148 Safari/604.1'
       );
 
-      await page.setViewport({
-        width: 375,
-        height: 812,
-        isMobile: true,
-        hasTouch: true
-      });
+      await page.setViewport({ width: 375, height: 812, isMobile: true, hasTouch: true });
 
       await page.goto('https://www.ecex688.com/#/pages/login/login', { waitUntil: 'domcontentloaded', timeout: 60000 });
       await randomWait();
@@ -91,7 +86,6 @@ const MAX_RETRIES = 3;
 
       const allViews = await page.$$('uni-view');
       let invitedMeBtn = null;
-
       for (const el of allViews) {
         const text = await page.evaluate(el => el.textContent?.trim().toLowerCase(), el);
         if (text === 'invited me') {
