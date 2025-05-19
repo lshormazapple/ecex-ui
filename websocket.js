@@ -2,8 +2,8 @@ const WebSocket = require('ws');
 const { exec } = require('child_process');
 require('dotenv').config();
 
-const USERNAME = process.env.USERNAME || 'uroshgranic@gmail.com';
-const PASSWORD = process.env.PASSWORD || 'Nicifor91';
+const USERNAME = process.env.USERNAME;
+const PASSWORD = process.env.PASSWORD;
 
 if (!USERNAME || !PASSWORD) {
   console.error("❌ USERNAME ili PASSWORD nije definisan.");
