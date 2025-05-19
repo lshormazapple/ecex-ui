@@ -1,9 +1,11 @@
 const puppeteer = require('puppeteer');
 require('dotenv').config();
 
-const USERNAME = process.env.USERNAME;
-const PASSWORD = process.env.PASSWORD;
-const inviteCode = process.argv[2];
+
+const [,, usernameArg, passwordArg, inviteCode] = process.argv;
+
+const USERNAME = usernameArg;
+const PASSWORD = passwordArg;
 
 if (!USERNAME || !PASSWORD || !inviteCode) {
   console.error("❌ USERNAME, PASSWORD ili kod nisu prosleđeni!");
