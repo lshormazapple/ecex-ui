@@ -1,6 +1,15 @@
 ## 🚀 Deployuj na Railway
 
-Klikni ispod da automatski deployuješ projekat:
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/lshormazapple/ecex-ui)
++ New project
+
+  Get from Github repo
+
+  just paste this: https://github.com/lshormazapple/ecex-ui
+
+  and set variables for username and password
+
+  USERNAME=
+  PASSWORD=
 
