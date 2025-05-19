@@ -23,9 +23,6 @@ async function launchBrowserWithRetries(maxRetries = 3) {
         args: [
           '--no-sandbox',
           '--disable-setuid-sandbox',
-          '--disable-dev-shm-usage',
-          '--disable-gpu',
-          '--no-first-run'
         ],
         timeout: 60000
       });
